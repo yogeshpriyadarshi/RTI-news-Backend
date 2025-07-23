@@ -8,7 +8,8 @@ const checkAuth= async(req, res,next)=>{
 
     try {
       const decoded = jwt.verify(token, process.env.JWT_SECURITY);
-      const user = await User.findOne({phone:decoded});
+      console.log("decoded contain what check:",decoded);
+      const user = await User.findOne({_id:decoded});
       req.user = user; // attach user to request
       next();
     } catch (err) {

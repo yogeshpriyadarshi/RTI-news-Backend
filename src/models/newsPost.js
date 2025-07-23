@@ -3,8 +3,7 @@ const mongoose = require("mongoose");
 const newsPostSchema = mongoose.Schema({
   userId: {
     type: mongoose.Types.ObjectId,
-    ref: "User", 
-    required: true
+    ref: "User",  
 },
     headline:{
         type:String
@@ -24,9 +23,19 @@ const newsPostSchema = mongoose.Schema({
     status:{
         type:String,
         enum:["approve", "pending","rejected"],
+        default:"pending"
+    },
+    image:{
+        type:String,
+        default:null
+    },
+    video:{
+        type:String,
+        default:null
     }
 },
 {timestamps:true}
 )
 
 const NewsPost = mongoose.model( "newsPost", newsPostSchema);
+module.exports = NewsPost;

@@ -24,6 +24,12 @@ const userSchema = mongoose.Schema({
     passwordHash:{
         type: String
     },
+    oauthProvider: {
+        type:String
+    },       
+    oauthProviderId:{
+        type:String
+    },
     location:{
         type:String
     },

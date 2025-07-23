@@ -19,14 +19,25 @@ try{
 
 Router.post("/phone",async(req , res )=>{
     try{
-      const {phone} = req.body;
-      const user = new User({phone});
+      const {phone} = req?.body;
+      if(!phone){
+        return res.json({message:"Phone number is not provided."})
+      }
+      let user = new User({phone});
       await user.save();
       // generate jwt token.
-      const token = jwt.sign(phone,process.env.JWT_SECURITY);
-      res.send(token);
+      user = await User.findOne({phone});
+      const token = await jwt.sign({ _id: user?._id }, process.env.JWT_SECURITY);
+      res.status(200).json({
+      message: 'Authentication successful',
+      token,
+      user,
+    })
     }catch(err){
      console.error(err);
+     res.status(400).json({message:"something went wrong",
+        error:err
+     })
     }
 })
 

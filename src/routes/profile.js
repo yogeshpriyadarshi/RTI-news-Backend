@@ -20,12 +20,13 @@ Router.patch("/updateprofile",checkAuth,async(req , res)=>{
    user.phone = phone;
    const update = await user.save();
    res.json({
-    message:"succfull",
+    message:"successfull",
     user:update
    })
    }catch(err){
    res.json({
-    message:err
+    message:"something went wrong!!!",
+    error:err
    });
    }
    
