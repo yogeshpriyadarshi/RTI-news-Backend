@@ -37,7 +37,7 @@ Authorization: Bearer <your_jwt_token>
 
 ## 🚪 Authentication Endpoints
 
-### POST '/auth/login' 
+### POST `/auth/login`
 
 **Description:** User sign up with username and password.
 
@@ -259,9 +259,9 @@ Authorization: Bearer <your_jwt_token>
 
 ## 📝 Post Endpoints
 
-### POST `/posts/create`
+### POST `/updatateNews`
 
-**Description:** Create a new post.
+**Description:** Create a News post.
 
 **Request Body:**
 
@@ -271,9 +271,15 @@ multipart/form-data
 
 **Form Fields:**
 
-- `image`: File (binary)
-- `content`: Post content (string)
-
+      userId: "String"
+      headline: "String"
+      description: "String"
+      location: "String"
+      category: "String"
+      language: "String"
+      image: "String"
+      video: "String"
+      
 **Responses:**
 
 - `201`: Post created successfully
