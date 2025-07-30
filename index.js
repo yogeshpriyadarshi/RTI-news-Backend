@@ -6,7 +6,7 @@ const masterRouter = require("./src/routes/master");
 const profileRouter = require("./src/routes/profile");
 const newsPostRouter = require("./src/routes/newsPost");
 const newsThirdPartyRouter = require("./src/routes/apiThirdParty");
-const connectDB = require('./src/config/configmongodb');
+const connectDB = require('./src/config/configMongoDB');
 
 const app = express();
 
