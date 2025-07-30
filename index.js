@@ -5,6 +5,7 @@ const authRouter = require("./src/routes/auth");
 const masterRouter = require("./src/routes/master");
 const profileRouter = require("./src/routes/profile");
 const newsPostRouter = require("./src/routes/newsPost");
+const newsThirdPartyRouter = require("./src/routes/apiThirdParty");
 const connectDB = require('./src/config/configmongodb');
 
 const app = express();
@@ -16,6 +17,7 @@ app.use("/", masterRouter);
 app.use("/", authRouter);
 app.use("/",profileRouter);
 app.use("/",newsPostRouter);
+app.use("/",newsThirdPartyRouter);
 
 connectDB();
 
