@@ -4,6 +4,9 @@ const checkAuth = require("../middleware/checkAuth");
 const NewsPost = require("../models/newsPost");
 const upload = require("../utils/upload");
 
+const NotifcationToken = require("../models/notificationToken");
+const { admin } = require("../utils/firebase");
+
 const Router = express.Router();
 
 Router.post('/uploadNews', upload.single('media'), async (req, res) => {
@@ -28,13 +31,41 @@ Router.post('/uploadNews', upload.single('media'), async (req, res) => {
       image: isVideo ? null : fileUrl,
       video: isVideo ? fileUrl : null,
     });
-    await post.save();
-    res.json(post);
+   // await post.save();
+    // as soon as news is posted send notification
+  
+    const allTokens = await NotifcationToken.find({});
+    const tokens = allTokens.map((t) => t.token);
+    console.log("list of token",tokens);
+
+    if (!tokens.length) return res.send("No tokens to send");
+ const title = req.body.headline;
+    const  body= req.body.description;
+    const message = {
+      tokens,
+      notification: { title, body },
+    };
+
+  // const response = await admin.messaging().sendMulticast(message);
+const response = await admin.messaging().sendEachForMulticast(message);
+    const failedTokens = [];
+    response.responses.forEach((resp, i) => {
+      if (!resp.success) {
+        failedTokens.push(tokens[i]);
+      }
+    });
+
+    res.json({
+      success: response.successCount,
+      failed: response.failureCount,
+      failedTokens,
+    });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Upload failed", error: err.message });
+    res.status(500).send("Failed to send notification");
   }
 });
+
 
 Router.get('/fetchNews', async (req, res) => {
   try { 

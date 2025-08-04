@@ -4,17 +4,16 @@ const notifcationSchema = mongoose.Schema({
     userId:{
         type: mongoose.Types.ObjectId
     },
-    message:{
+    token:{
         type:String
     },
-    read:{
-        type:Boolean,
-        default:false
+    platform:{
+        type:String,
     }
 },
 {timestamps:true}
 )
 
-const Notifcation = mongoose.model("Notifcation",notifcationSchema);
+const NotifcationToken = mongoose.model("NotifcationToken",notifcationSchema);
 
-module.exports = Notifcation;
+module.exports = NotifcationToken;

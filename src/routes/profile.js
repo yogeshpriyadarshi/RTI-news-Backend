@@ -9,7 +9,7 @@ Router.patch("/updateprofile",checkAuth,async(req , res)=>{
    const {userName, fullName, email,phone} =req.body;
    // check email and phone is avaiable
    if(!email || !phone ){
-    return res.json({
+    return res.json({ 
         message:"not valid input"
     })
    }
@@ -34,6 +34,13 @@ Router.patch("/updateprofile",checkAuth,async(req , res)=>{
 
 
 });
+
+// change password 
+
+// verirfy email 
+
+
+//verify phone: this will be done throug forntendS
 
 
 
