@@ -1,0 +1,752 @@
+[31merror[39m: uncaughtException: Cannot find module './src/config/configMongoDB'
+Require stack:
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module './src/config/configMongoDB'
+Require stack:
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\app.js:12:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 12:29:43 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":60146.5},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18314946,"external":21765998,"heapTotal":64016384,"heapUsed":40798832,"rss":89346048},"pid":11608,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module './src/config/configMongoDB'\nRequire stack:\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\app.js:12:19)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":19,"file":"D:\\RTI news Backend\\src\\app.js","function":null,"line":12,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/languages'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\master.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/languages'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\master.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\master.js:2:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:41:04 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\master.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64427.187},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265887,"external":20706777,"heapTotal":40435712,"heapUsed":28916832,"rss":77750272},"pid":1588,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/languages'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\master.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\master.js:2:19)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":19,"file":"D:\\RTI news Backend\\src\\routes\\v1\\master.js","function":null,"line":2,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/languages'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\master.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/languages'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\master.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\master.js:2:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:41:18 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\master.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64441.593},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265887,"external":20706777,"heapTotal":39649280,"heapUsed":29108576,"rss":77324288},"pid":5004,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/languages'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\master.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\master.js:2:19)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":19,"file":"D:\\RTI news Backend\\src\\routes\\v1\\master.js","function":null,"line":2,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../middleware/checkAuth'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\profile.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../middleware/checkAuth'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\profile.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\profile.js:2:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:41:48 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\profile.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64470.937},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265887,"external":20706777,"heapTotal":40435712,"heapUsed":29563160,"rss":77635584},"pid":9588,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../middleware/checkAuth'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\profile.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\profile.js:2:19)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":19,"file":"D:\\RTI news Backend\\src\\routes\\v1\\profile.js","function":null,"line":2,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../middleware/checkAuth'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\profile.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../middleware/checkAuth'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\profile.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\profile.js:2:19)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:42:06 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\profile.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64489.734},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265887,"external":20706777,"heapTotal":40697856,"heapUsed":29395072,"rss":77934592},"pid":2316,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../middleware/checkAuth'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\profile.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\profile.js:2:19)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":19,"file":"D:\\RTI news Backend\\src\\routes\\v1\\profile.js","function":null,"line":2,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:42:35 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64518.187},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36729672,"rss":84738048},"pid":3212,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:42:47 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64530.343},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36491112,"rss":84586496},"pid":2384,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:43:01 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64544.218},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36789016,"rss":84819968},"pid":9952,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:43:04 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64546.875},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36529752,"rss":84668416},"pid":12896,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:44:39 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64641.781},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36560536,"rss":84066304},"pid":15508,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:45:06 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64668.984},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36558520,"rss":84004864},"pid":13364,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:46:18 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64741.031},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":36166280,"rss":83492864},"pid":10740,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:46:20 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64743.546},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":36146656,"rss":83558400},"pid":15672,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:47:00 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64782.812},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36183776,"rss":83677184},"pid":10800,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:47:33 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64816.718},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36139440,"rss":83628032},"pid":9188,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:47:52 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64835.109},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":35973176,"rss":83947520},"pid":10704,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:48:48 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64891.203},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36180392,"rss":83767296},"pid":15096,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:50:01 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":64963.796},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":36143016,"rss":83812352},"pid":11852,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:51:17 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":65040.156},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":36163656,"rss":83881984},"pid":15260,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:51:46 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":65069.406},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":36161768,"rss":83443712},"pid":4176,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:52:09 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":65092.296},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36143880,"rss":83759104},"pid":15008,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:53:53 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":65195.937},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36171368,"rss":83828736},"pid":5248,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 13:55:51 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":65314.109},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":35988064,"rss":84189184},"pid":12748,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 14:01:44 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":65667.234},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265712,"external":20680447,"heapTotal":62251008,"heapUsed":35789264,"rss":82227200},"pid":14268,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 14:01:59 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":65682.078},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265712,"external":20680447,"heapTotal":62513152,"heapUsed":35869176,"rss":81870848},"pid":9208,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 14:02:30 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":65713.656},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265712,"external":20680447,"heapTotal":62251008,"heapUsed":36037056,"rss":83275776},"pid":6440,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 14:10:10 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":66173.39},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":36022920,"rss":83759104},"pid":10144,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 14:10:46 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":66209.125},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36393976,"rss":84152320},"pid":8244,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 14:13:02 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":66345.218},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265888,"external":20706778,"heapTotal":62513152,"heapUsed":36151096,"rss":83685376},"pid":9236,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: profileRouter is not defined
+ReferenceError: profileRouter is not defined
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\index.js:13:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\app.js:7:18) {"date":"Tue Aug 05 2025 14:15:16 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":66478.75},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265887,"external":20706777,"heapTotal":39911424,"heapUsed":28973888,"rss":77324288},"pid":10616,"uid":null,"version":"v22.16.0"},"stack":"ReferenceError: profileRouter is not defined\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\index.js:13:23)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\app.js:7:18)","trace":[{"column":23,"file":"D:\\RTI news Backend\\src\\routes\\v1\\index.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1895,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1465,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1282,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":18,"file":"D:\\RTI news Backend\\src\\app.js","function":null,"line":7,"method":null,"native":false}]}
+[31merror[39m: uncaughtException: profileRouter is not defined
+ReferenceError: profileRouter is not defined
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\index.js:14:23)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\app.js:7:18) {"date":"Tue Aug 05 2025 14:15:36 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":66499.312},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265887,"external":20706777,"heapTotal":39649280,"heapUsed":28852664,"rss":76939264},"pid":15640,"uid":null,"version":"v22.16.0"},"stack":"ReferenceError: profileRouter is not defined\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\index.js:14:23)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)\n    at Object..js (node:internal/modules/cjs/loader:1895:10)\n    at Module.load (node:internal/modules/cjs/loader:1465:32)\n    at Function._load (node:internal/modules/cjs/loader:1282:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\app.js:7:18)","trace":[{"column":23,"file":"D:\\RTI news Backend\\src\\routes\\v1\\index.js","function":null,"line":14,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1895,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1465,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1282,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":18,"file":"D:\\RTI news Backend\\src\\app.js","function":null,"line":7,"method":null,"native":false}]}
+[31merror[39m: uncaughtException: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module '../models/notificationToken'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\newsPost.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\newsPost.js:7:26)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 14:16:56 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":66579.093},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18265889,"external":20706779,"heapTotal":62513152,"heapUsed":36124696,"rss":83668992},"pid":10828,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module '../models/notificationToken'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js:7:26)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":26,"file":"D:\\RTI news Backend\\src\\routes\\v1\\newsPost.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module 'bcrypt'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\google.js
+- D:\RTI news Backend\src\routes\v1\auth.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module 'bcrypt'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\google.js
+- D:\RTI news Backend\src\routes\v1\auth.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\google.js:4:16)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 16:04:08 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\google.js","D:\\RTI news Backend\\src\\routes\\v1\\auth.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1502.296},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18314944,"external":21765996,"heapTotal":61145088,"heapUsed":29629704,"rss":83652608},"pid":13528,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module 'bcrypt'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\google.js\n- D:\\RTI news Backend\\src\\routes\\v1\\auth.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\google.js:4:16)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":16,"file":"D:\\RTI news Backend\\src\\routes\\v1\\google.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module 'bcrypt'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\google.js
+- D:\RTI news Backend\src\routes\v1\auth.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module 'bcrypt'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\google.js
+- D:\RTI news Backend\src\routes\v1\auth.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\google.js:4:16)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 16:04:41 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\google.js","D:\\RTI news Backend\\src\\routes\\v1\\auth.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1535.703},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18314944,"external":21765996,"heapTotal":61145088,"heapUsed":29507632,"rss":83648512},"pid":10428,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module 'bcrypt'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\google.js\n- D:\\RTI news Backend\\src\\routes\\v1\\auth.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\google.js:4:16)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":16,"file":"D:\\RTI news Backend\\src\\routes\\v1\\google.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}
+[31merror[39m: uncaughtException: Cannot find module 'bcrypt'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\google.js
+- D:\RTI news Backend\src\routes\v1\auth.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+Error: Cannot find module 'bcrypt'
+Require stack:
+- D:\RTI news Backend\src\routes\v1\google.js
+- D:\RTI news Backend\src\routes\v1\auth.js
+- D:\RTI news Backend\src\routes\v1\index.js
+- D:\RTI news Backend\src\app.js
+- D:\RTI news Backend\server.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\RTI news Backend\src\routes\v1\google.js:4:16)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14) {"date":"Tue Aug 05 2025 16:05:12 GMT+0530 (India Standard Time)","error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\RTI news Backend\\src\\routes\\v1\\google.js","D:\\RTI news Backend\\src\\routes\\v1\\auth.js","D:\\RTI news Backend\\src\\routes\\v1\\index.js","D:\\RTI news Backend\\src\\app.js","D:\\RTI news Backend\\server.js"]},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1566.109},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","D:\\RTI news Backend\\server.js"],"cwd":"D:\\RTI news Backend","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18314944,"external":21765996,"heapTotal":61145088,"heapUsed":29450360,"rss":83623936},"pid":10092,"uid":null,"version":"v22.16.0"},"stack":"Error: Cannot find module 'bcrypt'\nRequire stack:\n- D:\\RTI news Backend\\src\\routes\\v1\\google.js\n- D:\\RTI news Backend\\src\\routes\\v1\\auth.js\n- D:\\RTI news Backend\\src\\routes\\v1\\index.js\n- D:\\RTI news Backend\\src\\app.js\n- D:\\RTI news Backend\\server.js\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (D:\\RTI news Backend\\src\\routes\\v1\\google.js:4:16)\n    at Module._compile (node:internal/modules/cjs/loader:1730:14)","trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1401,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1057,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1062,"method":null,"native":false},{"column":37,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1211,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":235,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1487,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":135,"method":null,"native":false},{"column":16,"file":"D:\\RTI news Backend\\src\\routes\\v1\\google.js","function":null,"line":4,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1730,"method":"_compile","native":false}]}

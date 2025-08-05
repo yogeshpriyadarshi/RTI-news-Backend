@@ -1,5 +1,5 @@
 const express = require("express");
-const NotifcationToken = require("../models/notificationToken");
+const NotifcationToken = require("../../models/notificationToken");
 const admin = require("firebase-admin");
 
 const Router = express.Router();

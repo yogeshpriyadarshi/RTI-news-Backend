@@ -1,6 +1,6 @@
 const axios = require('axios')
 const jwt = require('jsonwebtoken')
-const User = require('../models/user');
+const User = require('../../models/user');
 const bcrypt = require('bcrypt')
 
 const google = async (req, res) => {

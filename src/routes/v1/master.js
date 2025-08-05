@@ -1,7 +1,7 @@
 const express = require("express");
-const Languages = require("../models/languages");
-const Category = require("../models/categories");
-const Location = require("../models/locations");
+const Languages = require("../../models/languages");
+const Category = require("../../models/categories");
+const Location = require("../../models/locations");
 
 const Routes = express.Router();
 

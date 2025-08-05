@@ -1,5 +1,5 @@
 const express = require("express");
-const { razorpay } = require("../config/razorpay");
+const { razorpay } = require("../../config/razorpay");
 
 const Router = express.Router();
 

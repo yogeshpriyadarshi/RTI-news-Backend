@@ -1,13 +1,33 @@
 const express = require("express");
 const multer = require('multer');
-const checkAuth = require("../middleware/checkAuth");
-const NewsPost = require("../models/newsPost");
-const upload = require("../utils/upload");
+const checkAuth = require("../../middleware/checkAuth");
+const NewsPost = require("../../models/newsPost");
+const upload = require("../../utils/upload");
 
-const NotifcationToken = require("../models/notificationToken");
-const { admin } = require("../utils/firebase");
+const NotifcationToken = require("../../models/notificationToken");
+const { admin } = require("../../utils/firebase");
+const { default: axios } = require("axios");
 
 const Router = express.Router();
+
+
+Router.get("/news",checkAuth,async(req, res)=>{
+    try{
+        const key=process.env.NEWS_THIRD_PARTY;
+        const news = await axios.get(`https://newsdata.io/api/1/latest`,
+        {params:{
+            apikey:key,
+            country: 'in',
+            language: req.query.lang || 'en'
+
+        }});
+    console.log(" news form third api", news.data);
+    res.send(news?.data);
+    }catch(err){
+        console.error(err);
+        res.send("something went wrong!!!");
+    }
+});
 
 Router.post('/uploadNews', upload.single('media'), async (req, res) => {
   try { 
