@@ -15,8 +15,7 @@ app.use(cors({
 }));
 app.use(express.json());  
 
-// app.use("/api/v1",v1Routes);
-
+app.use("/api/v1",v1Routes);
 
 app.use((req, res) => {
   res.status(404).json({ message: "Route not found" });

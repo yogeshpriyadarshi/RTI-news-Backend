@@ -20,7 +20,7 @@ Router.post("/savetoken",async(req, res )=>{
   }
 })
 
-Router.post("/send-notification", async (req, res) => {
+Router.post("/sendnotification", async (req, res) => {
   const { title, body } = req.body;
 
   try {
@@ -51,40 +51,6 @@ Router.post("/send-notification", async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).send("Failed to send notification");
-  }
-});
-
-
-
-
-
-Router.post("/send-notification", async (req, res) => {
-  const { tokens, title, body } = req.body;
-
-  const message = {
-    notification: { title, body },
-    tokens, // array of FCM tokens (up to 500)
-  };
-
-  try {
-    const response = await admin.messaging().sendMulticast(message);
-
-    // Optionally: remove failed tokens from DB
-    const failedTokens = [];
-    response.responses.forEach((resp, idx) => {
-      if (!resp.success) {
-        failedTokens.push(tokens[idx]);
-      }
-    });
-
-    res.status(200).json({
-      successCount: response.successCount,
-      failureCount: response.failureCount,
-      failedTokens,
-    });
-  } catch (error) {
-    console.error("Error sending notification", error);
-    res.status(500).send("Error sending notification");
   }
 });
 

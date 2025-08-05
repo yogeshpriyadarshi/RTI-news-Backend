@@ -11,7 +11,7 @@ const { default: axios } = require("axios");
 const Router = express.Router();
 
 
-Router.get("/news",checkAuth,async(req, res)=>{
+Router.get("/newsdata",checkAuth,async(req, res)=>{
     try{
         const key=process.env.NEWS_THIRD_PARTY;
         const news = await axios.get(`https://newsdata.io/api/1/latest`,
@@ -29,7 +29,7 @@ Router.get("/news",checkAuth,async(req, res)=>{
     }
 });
 
-Router.post('/uploadNews', upload.single('media'), async (req, res) => {
+Router.post('/uploadnews', upload.single('media'), async (req, res) => {
   try { 
     console.log("I did  upload file here!!!");
     const fileUrl = req.file?.path;
@@ -86,8 +86,7 @@ const response = await admin.messaging().sendEachForMulticast(message);
   }
 });
 
-
-Router.get('/fetchNews', async (req, res) => {
+Router.get('/fetchnews', async (req, res) => {
   try { 
     console.log("I all news post file here!!!");
     console.log("what is stored in req.query",req?.query);
