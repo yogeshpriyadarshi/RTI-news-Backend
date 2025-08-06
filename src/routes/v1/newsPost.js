@@ -188,4 +188,14 @@ Router.patch('/updateNews', checkAuth, upload.single('media'), async (req, res) 
   }
 });
 
+Router.get('/fetchallnews', async (req, res) => {
+  try { 
+    const news = await NewsPost.find({});
+       res.status(200).json({message:"all news",news});
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: " failed news fetching" });
+  }
+});
+
 module.exports = Router;
