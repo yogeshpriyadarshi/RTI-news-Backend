@@ -22,7 +22,7 @@ try{
       user = await User.create({ phone });
     }
     // 🎫 (Optional) Generate your own JWT
-    const jwtRTIToken = jwt.sign({ id: user._id }, 'your-secret');
+    const jwtRTIToken = jwt.sign({ _id: user?._id },  process.env.JWT_SECURITY);
 
     res.status(200).json({
       message: 'Authentication successful',
@@ -31,7 +31,8 @@ try{
     })
 }catch(err){
     console.error(err);
-    res.send(err);
+    logger.error(err);
+     res.status(400).json({message:"something went wrong", })
 }
 });
 
@@ -59,12 +60,10 @@ Router.post("/phone",async(req , res )=>{
     })
     }catch(err){
      console.error(err);
+     logger.error(err);
      res.status(400).json({message:"something went wrong",
-        error:err
      })
     }
 })
-
-
 
 module.exports = Router;

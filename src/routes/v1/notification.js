@@ -1,12 +1,14 @@
 const express = require("express");
 const NotifcationToken = require("../../models/notificationToken");
 const admin = require("firebase-admin");
+const checkAuth = require("../../middleware/checkAuth");
 
 const Router = express.Router();
 
-Router.post("/savetoken",async(req, res )=>{
-    const { userId, token, platform } = req.body;
+Router.post("/savetoken", checkAuth, async(req, res )=>{
   try {
+    const { token, platform } = req.body;
+    const userId= req?.user?._id;
      const update=await NotifcationToken.findOneAndUpdate(
   { userId }, 
   { token }, 

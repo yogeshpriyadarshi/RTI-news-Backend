@@ -29,7 +29,7 @@ Router.get("/newsdata",checkAuth,async(req, res)=>{
     }
 });
 
-Router.post('/uploadnews', upload.single('media'), async (req, res) => {
+Router.post('/uploadnews',checkAuth, upload.single('media'), async (req, res) => {
   try { 
     console.log("I did  upload file here!!!");
     const fileUrl = req.file?.path;
@@ -86,26 +86,22 @@ const response = await admin.messaging().sendEachForMulticast(message);
   }
 });
 
-Router.get('/fetchnews', async (req, res) => {
+Router.get('/fetchnews',checkAuth, async (req, res) => {
   try { 
-    console.log("I all news post file here!!!");
-    console.log("what is stored in req.query",req?.query);
     const {language,category} = req.query;
-    console.log("language",language);
     const filter = {};
   if (language) filter.language = language;
   if (category) filter.category = category;
-    const news = await NewsPost.find({language,category});
+    const news = await NewsPost.find(filter);
        res.json(news);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: " failed news fetching", error: err.message });
+    res.status(500).json({ message: " failed news fetching" });
   }
 });
 
-Router.patch('/updateNews', upload.single('media'), async (req, res) => {
+Router.patch('/updateNews', checkAuth, upload.single('media'), async (req, res) => {
   try { 
-    console.log("I did  upload file here!!!");
     const fileUrl = req.file?.path;
     console.log(fileUrl);
 
