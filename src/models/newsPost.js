@@ -22,7 +22,7 @@ const newsPostSchema = mongoose.Schema({
     },
     status:{
         type:String,
-        enum:["approve", "pending","rejected"],
+        enum:["approved", "pending","rejected"],
         default:"pending"
     },
     image:{

@@ -10,7 +10,7 @@ const { default: axios } = require("axios");
 
 const Router = express.Router();
 
-
+// Third party api
 Router.get("/newsdata",checkAuth,async(req, res)=>{
     try{
         const key=process.env.NEWS_THIRD_PARTY;
@@ -25,73 +25,135 @@ Router.get("/newsdata",checkAuth,async(req, res)=>{
     res.send(news?.data);
     }catch(err){
         console.error(err);
-        res.send("something went wrong!!!");
+        res.status(500).json({ message: " failed news fetching" });
     }
 });
+// upload news.
+Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) => {
+  try {
+    console.log("Uploading news with media...");
+    console.log("all input of news!",req.body);
 
-Router.post('/uploadnews',checkAuth, upload.single('media'), async (req, res) => {
-  try { 
-    console.log("I did  upload file here!!!");
-    const fileUrl = req.file?.path;
-    console.log(fileUrl);
+    const { headline, description, location, category, language } = req.body;
+    const file = req.file;
 
-    if (!fileUrl) {
-      return res.status(400).json({ message: "No file uploaded" });
+    // ✅ Validate required fields
+    if (!headline || !description || !location || !category || !language) {
+      return res.status(400).json({ message: "All fields are required" });
     }
 
-    const isVideo = req.file.mimetype.startsWith("video");
+    // ✅ Validate file
+    if (!file || !file.path) {
+      return res.status(400).json({ message: "Media file is required" });
+    }
+
+    const isVideo = file.mimetype.startsWith("video");
+    const fileUrl = file.path;
 
     const post = new NewsPost({
-      userId: req.body.userId,
-      headline: req.body.headline,
-      description: req.body.description,
-      location: req.body.location,
-      category: req.body.category,
-      language: req.body.language,
+      userId: req.user._id,
+      headline,
+      description,
+      location,
+      category,
+      language,
       image: isVideo ? null : fileUrl,
       video: isVideo ? fileUrl : null,
     });
-   // await post.save();
-    // as soon as news is posted send notification
+
+    const savedPost = await post.save();
+
+    return res.status(201).json({
+      message: "News uploaded successfully",
+      news: savedPost,
+    });
+
+  } catch (err) {
+    console.error("Error uploading news:", err);
+    return res.status(500).json({ message: "Internal server error" });
+  }
+});
+
+// fetch news based on pending
+Router.get('/pendingnews',checkAuth, async (req, res) => {
+  try { 
+    filter={status:"pending"}
+    const news = await NewsPost.find(filter);
+       res.json({
+        message:"successful fetch pending news!!!",
+        news
+       });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: " failed news fetching" });
+  }
+});
+
+// mediator will change status pending=>approved or pending=>rejected
+Router.patch('/changestatus',checkAuth, async (req, res) => {
+  try { 
+    const _id = req.body?.id;
+    const status=req?.body?.status;
+    const news = await NewsPost.findByIdAndUpdate(_id, {status}, { new: true });
+    if(status=="approved"){
+         // as soon as news is approved send notification to all user
   
-    const allTokens = await NotifcationToken.find({});
-    const tokens = allTokens.map((t) => t.token);
-    console.log("list of token",tokens);
+   const allTokens = await NotifcationToken.find({});
+   const tokens = allTokens.map((t) => t.token);
+//     console.log("list of token",tokens);
 
     if (!tokens.length) return res.send("No tokens to send");
- const title = req.body.headline;
-    const  body= req.body.description;
+    const title = news?.headline;
+     const  body= news?.description;
     const message = {
       tokens,
       notification: { title, body },
     };
 
-  // const response = await admin.messaging().sendMulticast(message);
-const response = await admin.messaging().sendEachForMulticast(message);
+  const response = await admin.messaging().sendEachForMulticast(message);
     const failedTokens = [];
     response.responses.forEach((resp, i) => {
-      if (!resp.success) {
-        failedTokens.push(tokens[i]);
+     if (!resp.success) {
+       failedTokens.push(tokens[i]);
       }
     });
 
-    res.json({
-      success: response.successCount,
-      failed: response.failureCount,
-      failedTokens,
-    });
+    }else if(status=="rejected"){
+       const userId = news?.userId;
+       const token = await NotifcationToken.findOne({userId});
+
+    if (!token) return res.send("No tokens to send");
+    const title = news?.headline;
+    const body= news?.description;
+    const message = {
+      token,
+      notification: { title, body },
+    };
+    const response = await admin.messaging().send(message);
+    }
+
+
+       res.json({
+        message:`status of news is changed to ${req?.body?.status}`,
+        news
+       });
   } catch (err) {
     console.error(err);
-    res.status(500).send("Failed to send notification");
+    res.status(500).json({ message: " failed news fetching" });
   }
 });
-
+// fetch news based on language, location and category 
 Router.get('/fetchnews',checkAuth, async (req, res) => {
   try { 
     const {language,category} = req.query;
     const filter = {};
-  if (language) filter.language = language;
+    filter.status="approved";
+  if (language){
+     filter.language = language;
+  } 
   if (category) filter.category = category;
+  console.log(filter);
+
     const news = await NewsPost.find(filter);
        res.json(news);
   } catch (err) {
