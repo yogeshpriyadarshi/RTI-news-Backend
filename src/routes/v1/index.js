@@ -8,12 +8,16 @@ const Router = express.Router();
  const profileRouter = require("./profile");
  const newsPostRouter = require("./newsPost");
  const notificationRouter = require("./notification");
+  const reporterRouter =require("./reporter");
+  const activistRouter = require("./activist");
 
 // divert all api.
  Router.use("/auth",authRouter);
  Router.use("/profile",profileRouter);
  Router.use("/news",newsPostRouter);
  Router.use("/notification",notificationRouter);
+ Router.use("/reporter",reporterRouter);
+ Router.use("/activist",activistRouter);
 
 
 module.exports=Router;

@@ -31,9 +31,6 @@ Router.get("/newsdata",checkAuth,async(req, res)=>{
 // upload news.
 Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) => {
   try {
-    console.log("Uploading news with media...");
-    console.log("all input of news!",req.body);
-
     const { headline, description, location, category, language } = req.body;
     const file = req.file;
 
