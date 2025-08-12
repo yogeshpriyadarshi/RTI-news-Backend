@@ -159,6 +159,7 @@ Router.get('/fetchnews', async (req, res) => {
   }
 });
 
+
 Router.patch('/updateNews', checkAuth, upload.single('media'), async (req, res) => {
   try { 
     const fileUrl = req.file?.path;
