@@ -2,10 +2,11 @@ const express = require("express");
 const checkAuth = require("../../middleware/checkAuth");
 const Reporter = require("../../models/reporterRTI");
 const upload = require("../../utils/upload");
+const logger = require("../../utils/logger");
 
 const Router = express.Router();
-
-Router.post("/application", checkAuth,upload.single('media'), async(req, res )=>{
+// a user will fill application form for being a reporter.
+Router.post("/application",upload.single('media'), async(req, res )=>{
   try {
     const {
     name,
@@ -60,6 +61,31 @@ const fileds ={
     res.status(500).send("Error saving token");
   }
 })
+
+// Admin will fetch all pending reporter for changing 
+Router.get("/fetchpending",checkAuth,async(req, res)=>{
+  try{
+    const pendingReporter = await Reporter.find({});
+    res.status(200).json({message:"all pending reporter", pendingReporter});
+
+  }catch(err){
+    logger.error(err);
+    res.status(400).json({message:"something went wrong!!!"});
+  }
+});
+// Admin will change the status of reporter.
+Router.patch("/changestatus",checkAuth,async(req, res)=>{
+  try{
+    const _id = req.body?.id;
+    const status=req?.body?.status;
+    const reporter = await Reporter.findByIdAndUpdate(_id, {status}, { runValidators: true, new: true });
+    res.status(200).json({message:`status change to ${status}`,reporter});
+
+  }catch(err){
+     logger.error(err);
+    res.status(400).json({message:"something went wrong!!!"});
+  }
+});
 
 
 module.exports= Router;

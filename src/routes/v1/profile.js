@@ -59,6 +59,7 @@ Router.patch("/changepassword",checkAuth, async(req, res)=>{
 
         user.password = hashedPassword;
         await user.save();
+        res.status(200).json({message:"successful"})
     }catch(err){
         logger.error(err);
         res.status(500).json({message:"something went wrong!"})

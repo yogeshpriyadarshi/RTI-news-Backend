@@ -39,7 +39,7 @@ const activistSchema = mongoose.Schema({
     },
     status:{
         type:String,
-        enum:["Active","Blocked","Pending"],
+        enum:["Approved","Rejected","Pending"],
         default:"Pending"
     }
 },

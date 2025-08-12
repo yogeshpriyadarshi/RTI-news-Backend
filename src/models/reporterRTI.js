@@ -43,12 +43,13 @@ const reporterSchema = mongoose.Schema({
     },
     status:{
         type:String,
-        enum:["Active","Blocked","Pending"],
+        enum:["Approved","Rejected","Pending"],
         default:"Pending"
     }
 },
 {timestemps:true}
 );
+
 
 
 const Reporter = mongoose.model("reporter",reporterSchema);

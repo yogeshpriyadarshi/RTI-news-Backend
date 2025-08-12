@@ -140,7 +140,7 @@ Router.patch('/changestatus',checkAuth, async (req, res) => {
   }
 });
 // fetch news based on language, location and category 
-Router.get('/fetchnews',checkAuth, async (req, res) => {
+Router.get('/fetchnews', async (req, res) => {
   try { 
     const {language,category} = req.query;
     const filter = {};

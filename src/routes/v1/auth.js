@@ -8,7 +8,7 @@ const Router = express.Router();
 
 
 
-Router.post("/signup",async(req, res)=>{
+Router.post("/firebaseauth",async(req, res)=>{
 try{
     const authHeader = req.headers.authorization || '';
     const idToken = authHeader.split('Bearer ')[1];

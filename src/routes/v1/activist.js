@@ -2,10 +2,11 @@ const express = require("express");
 const checkAuth = require("../../middleware/checkAuth");
 const upload = require("../../utils/upload");
 const Activist = require("../../models/activistRTI");
+const logger = require("../../utils/logger");
 
 const Router = express.Router();
 
-Router.post("/application", checkAuth,upload.single('media'), async(req, res )=>{
+Router.post("/application",upload.single('media'), async(req, res )=>{
   try {
     const {
     name,
@@ -61,6 +62,32 @@ const fileds ={
   }
 })
 
+// Admin will fetch all pending reporter for changing 
+Router.get("/fetchpending",checkAuth,async(req, res)=>{
+  try{
+    const pendingActivist = await Activist.find({});
+    res.status(200).json({message:"all pending activist", pendingActivist});
+
+  }catch(err){
+    logger.error(err);
+    res.status(400).json({message:"something went wrong!!!"});
+  }
+});
+// Admin will change the status of reporter.
+Router.patch("/changestatus",checkAuth,async(req, res)=>{
+  try{
+    const _id = req.body?.id;
+    const status=req?.body?.status;
+    const activist = await Activist.findByIdAndUpdate(_id, {status}, { runValidators: true, new: true });
+    console.log(activist);
+    res.status(200).json({message:`status change to ${status}`,activist});
+
+  }catch(err){
+     logger.error(err);
+    res.status(400).json({message:"something went wrong!!!"});
+  }
+});
 
 module.exports= Router;
+
 
