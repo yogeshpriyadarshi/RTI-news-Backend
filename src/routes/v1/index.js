@@ -10,6 +10,7 @@ const Router = express.Router();
  const notificationRouter = require("./notification");
   const reporterRouter =require("./reporter");
   const activistRouter = require("./activist");
+  const feedbackRouter = require("./newsFeedback");
 
 // divert all api.
  Router.use("/auth",authRouter);
@@ -18,6 +19,6 @@ const Router = express.Router();
  Router.use("/notification",notificationRouter);
  Router.use("/reporter",reporterRouter);
  Router.use("/activist",activistRouter);
-
+ Router.use("/feedback",feedbackRouter);
 
 module.exports=Router;

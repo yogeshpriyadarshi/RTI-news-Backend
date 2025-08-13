@@ -4,10 +4,10 @@ const userSchema = mongoose.Schema({
     role:{
         type:String,
         enum:{
-            values:["user","moderator","admin"],
-            message:`&{values} is not valid !!!`
+            values:["User","Moderator","Admin","Reporter"],
+            message:`{values} is not valid !!!`
         },
-        default:"user"
+        default:"User"
     },
     fullName:{
         type:String,

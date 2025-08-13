@@ -11,7 +11,7 @@ const { default: axios } = require("axios");
 const Router = express.Router();
 
 // Third party api
-Router.get("/newsdata",checkAuth,async(req, res)=>{
+Router.get("/newsdata",async(req, res)=>{
     try{
         const key=process.env.NEWS_THIRD_PARTY;
         const news = await axios.get(`https://newsdata.io/api/1/latest`,
@@ -33,6 +33,8 @@ Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) =
   try {
     const { headline, description, location, category, language } = req.body;
     const file = req.file;
+    const role = req?.user?.role;
+
 
     // ✅ Validate required fields
     if (!headline || !description || !location || !category || !language) {
@@ -46,19 +48,27 @@ Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) =
 
     const isVideo = file.mimetype.startsWith("video");
     const fileUrl = file.path;
-
-    const post = new NewsPost({
+    const status = role=="Reporter"?"Approved":"Pending"
+   
+    const news = {
       userId: req.user._id,
       headline,
       description,
       location,
       category,
       language,
+      status,
       image: isVideo ? null : fileUrl,
       video: isVideo ? fileUrl : null,
-    });
+    }
 
+    const post = new NewsPost(news);
     const savedPost = await post.save();
+
+   if(role=="reporter"){
+
+
+  }
 
     return res.status(201).json({
       message: "News uploaded successfully",
@@ -139,6 +149,7 @@ Router.patch('/changestatus',checkAuth, async (req, res) => {
     res.status(500).json({ message: " failed news fetching" });
   }
 });
+
 // fetch news based on language, location and category 
 Router.get('/fetchnews', async (req, res) => {
   try { 
@@ -158,7 +169,52 @@ Router.get('/fetchnews', async (req, res) => {
     res.status(500).json({ message: " failed news fetching" });
   }
 });
+// fetch news by id.
+Router.get("/fetchNewsById", async(req, res)=>{
+  try{
+    const _id =req?.query?.id;
+    if(!_id){
+      return res.status(500).json({
+        message:"news id is not available!!"
+      })
+    }
+    const news = await NewsPost.findById(_id);
+    res.status(500).json({
+      message:"done news fetch by id",
+      news
+    })
+  }catch(err){
+    console.error(err);
+    res.status(500).json({
+      message:"something went wrong!!!"
+    })
+  }
+})
 
+// feedback on news, it adds to newspost schema 
+Router.patch('/feedback',checkAuth, async (req, res) => {
+  try { 
+    const _id = req.body?.id;  // news id 
+    console.log(_id);
+    const feedback=req?.body?.feedback;
+    const userId = req?.user?._id;
+    const news = await NewsPost.findById(_id);
+     console.log("news is ",news);
+    if(!news){
+      return res.status(500).json({message:"no news with this id."});
+    }
+   
+    news.feedbackArray={ userId, feedback};
+    await news.save();
+       res.json({
+        message:`status of news is changed to `,
+        news
+       });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: " failed news fetching" });
+  }
+});
 
 Router.patch('/updateNews', checkAuth, upload.single('media'), async (req, res) => {
   try { 

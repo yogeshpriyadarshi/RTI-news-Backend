@@ -48,7 +48,7 @@ Router.post("/phone",async(req , res )=>{
       // if user is not available in database then create new one.
       if(!user){
          user = new User({phone});
-            user=  await user.save();
+        user=  await user.save();
       }
       // generate jwt token.
       const token = await jwt.sign({ _id: user?._id }, process.env.JWT_SECURITY);

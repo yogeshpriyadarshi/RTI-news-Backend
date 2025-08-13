@@ -1,5 +1,16 @@
 const mongoose = require("mongoose");
 
+const feedbackSchema = mongoose.Schema({
+    userId:{
+        type:mongoose.Types.ObjectId,
+        ref:"User",
+    },
+    feedback:{
+        type:String,
+    },
+
+})
+
 const newsPostSchema = mongoose.Schema({
   userId: {
     type: mongoose.Types.ObjectId,
@@ -22,8 +33,8 @@ const newsPostSchema = mongoose.Schema({
     },
     status:{
         type:String,
-        enum:["approved", "pending","rejected"],
-        default:"pending"
+        enum:["Approved", "Pending","Rejected"],
+        default:"Pending"
     },
     image:{
         type:String,
@@ -32,6 +43,9 @@ const newsPostSchema = mongoose.Schema({
     video:{
         type:String,
         default:null
+    },
+    feedbackArray:{
+        type: [feedbackSchema],
     }
 },
 {timestamps:true}
