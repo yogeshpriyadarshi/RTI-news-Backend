@@ -1,3 +1,4 @@
 [32minfo[39m: phone login done!!!
 [31merror[39m: User validation failed: role: {values} is not valid !!! {"_message":"User validation failed","errors":{"role":{"kind":"enum","message":"{values} is not valid !!!","name":"ValidatorError","path":"role","properties":{"enumValues":["User","Moderator","Admin","Reporter"],"message":"{values} is not valid !!!","path":"role","type":"enum","value":"user"},"value":"user"}}}
 [32minfo[39m: phone login done!!!
+[32minfo[39m: phone login done!!!

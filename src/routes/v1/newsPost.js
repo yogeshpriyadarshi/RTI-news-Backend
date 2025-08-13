@@ -46,6 +46,7 @@ Router.get("/newsdataInternational",async(req, res)=>{
         res.status(500).json({ message: " failed news fetching" });
     }
 });
+
 // upload news.
 Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) => {
   try {
@@ -53,9 +54,9 @@ Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) =
     const file = req.file;
     const role = req?.user?.role;
 
-
     // ✅ Validate required fields
-    if (!headline || !description || !location || !category || !language) {
+    if (!headline || !description || 
+      !location || !category || !language) {
       return res.status(400).json({ message: "All fields are required" });
     }
 
@@ -68,8 +69,8 @@ Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) =
     const fileUrl = file.path;
     const status = role=="Reporter"?"Approved":"Pending"
    
-    const news = {
-      userId: req.user._id,
+    const saveNews = {
+      userId: req?.user?._id,
       headline,
       description,
       location,
@@ -80,19 +81,40 @@ Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) =
       video: isVideo ? fileUrl : null,
     }
 
-    const post = new NewsPost(news);
-    const savedPost = await post.save();
+    const post = new NewsPost(saveNews);
+    const news = await post.save();
 
    if(role=="reporter"){
+   const allTokens = await NotifcationToken.find({});
+   const tokens = allTokens.map((t) => t.token);
+//     console.log("list of token",tokens);
+    if (!tokens.length) return res.status(500).json({message:"notification to user is not send!!!"});
+    const title = news?.headline;
+    const  body= news?.description;
+    const message = {
+      tokens,
+      notification: { title, body },
+    };
 
-
-  }
-
+  const response = await admin.messaging().sendEachForMulticast(message);
+    const failedTokens = [];
+    response.responses.forEach((resp, i) => {
+     if (!resp.success) {
+       failedTokens.push(tokens[i]);
+      }
+    });
     return res.status(201).json({
-      message: "News uploaded successfully",
+      message: "News uploaded successfully and notification is send to user!!! ",
+      news: savedPost,
+      failedUser:failedTokens
+    });
+  }else{
+      return res.status(201).json({
+      message: "News uploaded successfully and wait for approval! ",
       news: savedPost,
     });
-
+  }
+   
   } catch (err) {
     console.error("Error uploading news:", err);
     return res.status(500).json({ message: "Internal server error" });
@@ -121,8 +143,7 @@ Router.patch('/changestatus',checkAuth, async (req, res) => {
     const status=req?.body?.status;
     const news = await NewsPost.findByIdAndUpdate(_id, {status}, { new: true });
     if(status=="approved"){
-         // as soon as news is approved send notification to all user
-  
+   // as soon as news is approved send notification to all user
    const allTokens = await NotifcationToken.find({});
    const tokens = allTokens.map((t) => t.token);
 //     console.log("list of token",tokens);
