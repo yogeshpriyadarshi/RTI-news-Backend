@@ -28,6 +28,24 @@ Router.get("/newsdata",async(req, res)=>{
         res.status(500).json({ message: " failed news fetching" });
     }
 });
+// international third api 
+Router.get("/newsdataInternational",async(req, res)=>{
+    try{
+        const key=process.env.NEWS_THIRD_PARTY;
+        const news = await axios.get(`https://newsdata.io/api/1/latest`,
+        {params:{
+            apikey:key,
+            q: 'India',
+            language: req.query.lang || 'en'
+
+        }});
+    console.log(" news form third api", news.data);
+    res.send(news?.data);
+    }catch(err){
+        console.error(err);
+        res.status(500).json({ message: " failed news fetching" });
+    }
+});
 // upload news.
 Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) => {
   try {
