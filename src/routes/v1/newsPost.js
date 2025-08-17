@@ -47,6 +47,7 @@ Router.get("/newsdataInternational",async(req, res)=>{
     }
 });
 
+
 // upload news.
 Router.post('/uploadnews', checkAuth, upload.single('media'), async (req, res) => {
   try {
